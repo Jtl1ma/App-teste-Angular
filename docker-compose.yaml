@@ -1,0 +1,13 @@
+version: '3.7'
+
+services:
+  app-angular:
+    image: jonhlima/app-cadastro:v1.0
+    build: .
+    container_name: angular-container
+    restart: always
+    ports:
+      - 8081:80
+   # volumes:
+    #  - ./app-cadastro:/usr/share/nginx/html
+    #  - ./html:/usr/share/nginx/html
